@@ -23,3 +23,12 @@ get '/elephants/:id' do
 
   erb :elephants_show
 end
+
+# edit an elephant - Technically not in REST
+# get "/elephants/:id/edit"
+
+# update an elephant
+# put "/elephants/:id" (Or patch)
+
+# delete an elephant
+# delete "/elephants/:id"
