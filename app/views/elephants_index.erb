@@ -1,0 +1,8 @@
+
+<ul>
+  <% @elephants.each do |elephant| %>
+  <li><a href="/elephants/<%= elephant.id %>"><%= elephant.name %></a></li>
+  <% end %>
+</ul>
+
+<a href="/elephants/new">Create a new elephant!</a>
