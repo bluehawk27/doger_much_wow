@@ -8,8 +8,14 @@ require 'rubygems'
 ENV['RACK_ENV'] ||= 'test'
 
 require File.expand_path("../../config/environment", __FILE__)
+# Unit
+# Shoulda is used for validations and other model level tests.
 require 'shoulda-matchers'
+# Rack Test is used to test controllers in the request response cycle
 require 'rack/test'
+# Integration
+# Used integration tests which walk through the code at the view level and
+# ensure things work for the user
 require 'capybara'
 require 'capybara/rspec'
 

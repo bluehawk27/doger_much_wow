@@ -31,4 +31,8 @@ end
 # put "/elephants/:id" (Or patch)
 
 # delete an elephant
-# delete "/elephants/:id"
+delete "/elephants/:id" do
+  elephant = Elephant.find params[:id]
+  elephant.destroy
+  redirect "/elephants"
+end
